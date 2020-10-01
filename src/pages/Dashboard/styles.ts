@@ -94,7 +94,7 @@ export const Schedule = styled.div`
   }
 `;
 
-export const NextAppoitment = styled.div`
+export const NextAppointment = styled.div`
   margin-top: 64px;
 
   > strong {
@@ -160,7 +160,7 @@ export const Section = styled.div`
   }
 `;
 
-export const Appoitment = styled.div`
+export const Appointment = styled.div`
   display: flex;
   align-items: center;
 
@@ -169,6 +169,7 @@ export const Appoitment = styled.div`
     display: flex;
     align-items: center;
     color: #f4ede8;
+    width: 70px;
 
     svg {
       color: #ff9000;
