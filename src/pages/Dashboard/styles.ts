@@ -157,12 +157,21 @@ export const Section = styled.div`
     border-bottom: 1px solid #3e3b47;
     display: block;
     padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
+  > p {
+    color: #999591;
   }
 `;
 
 export const Appointment = styled.div`
   display: flex;
   align-items: center;
+
+  & + div {
+    margin-top: 16px;
+  }
 
   span {
     margin-left: auto;
@@ -179,7 +188,6 @@ export const Appointment = styled.div`
 
   div {
     flex: 1;
-    margin-top: 16px;
     background: #3e3b47;
     display: flex;
     align-items: center;
