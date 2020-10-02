@@ -77,9 +77,9 @@ const Profile: React.FC = () => {
             : {}),
         };
 
-        const userUpdated = await api.put('/profile', formDate);
+        const reponse = await api.put('/profile', formDate);
 
-        updatedUser(userUpdated);
+        updatedUser(reponse.data);
 
         history.push('/');
 
@@ -103,7 +103,7 @@ const Profile: React.FC = () => {
         });
       }
     },
-    [addToast, history],
+    [addToast, history, updatedUser],
   );
 
   const handleAvatarChange = useCallback(
