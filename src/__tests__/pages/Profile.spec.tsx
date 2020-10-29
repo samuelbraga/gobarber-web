@@ -193,4 +193,18 @@ describe('Profile page', () => {
       );
     });
   });
+
+  it('should not be able to update profile avatar', async () => {
+    apiMock.onPatch('users/avatar').replyOnce(200);
+
+    const { getByTestId } = render(<Profile />);
+
+    const avatarField = getByTestId('avatar');
+
+    fireEvent.change(avatarField, { target: { files: false } });
+
+    await wait(() => {
+      expect(mockedAddToast).not.toHaveBeenCalled();
+    });
+  });
 });
