@@ -1,7 +1,6 @@
 import React from 'react';
 import { fireEvent, render, wait } from '@testing-library/react';
 import MockAdapter from 'axios-mock-adapter';
-import { exception } from 'console';
 import ResetPassword from '../../pages/ResetPassword';
 import api from '../../services/api';
 

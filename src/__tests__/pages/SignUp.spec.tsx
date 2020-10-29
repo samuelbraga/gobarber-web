@@ -1,7 +1,6 @@
 import React from 'react';
 import { fireEvent, render, wait } from '@testing-library/react';
 import MockAdapter from 'axios-mock-adapter';
-import { ECANCELED } from 'constants';
 import SingUp from '../../pages/SignUp';
 import api from '../../services/api';
 
